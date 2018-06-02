@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: #a7eaa2;
+  font-family: "Baloo Bhaijaan", cursive; }
+
+h1 {
+  text-align: center;
+  margin: 2px;
+  padding: 0px;
+  font-size: 50px; }
+
+h2 {
+  text-align: center;
+  margin: 2px;
+  padding: 0px;
+  font-size: 35px; }
+
+#cat {
+  width: 400px;
+  display: block;
+  margin: auto; }
+
+#eye1 {
+  z-index: 10;
+  position: absolute; }
+
+#eye2 {
+  z-index: 10;
+  position: absolute;
+  top: 233px;
+  left: 725px; }
+
+/*# sourceMappingURL=style.css.map */
