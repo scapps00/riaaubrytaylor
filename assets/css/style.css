@@ -39,7 +39,7 @@ td {
 .links {
   font-size: 50px; }
 
-#meow {
+#meow, #laserSound {
   display: none; }
 
 #laser1, #laser2 {
