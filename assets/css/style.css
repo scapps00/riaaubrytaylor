@@ -30,4 +30,22 @@ h2 {
   top: 233px;
   left: 725px; }
 
+table {
+  width: 100%; }
+
+td {
+  width: 50%; }
+
+.links {
+  font-size: 50px; }
+
+#meow {
+  display: none; }
+
+#laser1, #laser2 {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  transform-origin: left top; }
+
 /*# sourceMappingURL=style.css.map */

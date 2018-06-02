@@ -56,14 +56,14 @@ function calcY2(x, y, right) {
 
 function eye1Pos() {
     var windowWidth = $(window).width();
-    var catLeft = Math.floor(windowWidth / 2 - 200);
-    return catLeft + 95;
+    var catLeft = Math.floor(windowWidth / 4 - 200);
+    return catLeft + 100;
 }
 
 function eye2Pos() {
     var windowWidth = $(window).width();
-    var catRight = Math.floor(windowWidth / 2 + 200);
-    return catRight - 160;
+    var catRight = Math.floor(windowWidth / 4 + 200);
+    return catRight - 155;
 }
 
 $(document).on("mousemove", function(event) {
