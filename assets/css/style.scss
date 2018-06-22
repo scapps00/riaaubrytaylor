@@ -26,15 +26,22 @@ h2 {
 
 #cat {
     width: 400px;
-    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
     margin: auto;
+    top: 0px;
+}
+
+.stuff {
+    position: absolute;
 }
 
 #eye1 {
     z-index: 10;
     position: absolute;
-    //top: 233px;
-    //left: 581px;
+    top: 233px;
+    left: 581px;
 }
 
 #eye2 {
@@ -65,4 +72,9 @@ td {
     position: absolute;
     z-index: 20;
     transform-origin: left top;
+}
+
+.copy {
+    text-align: center;
+    font-size: 15px;
 }

@@ -57,31 +57,39 @@ function calcY2(x, y, right) {
 function eye1Pos() {
     var windowWidth = $(window).width();
     var catLeft = Math.floor(windowWidth / 4 - 200);
-    return catLeft + 100;
+    return catLeft + 110;
 }
 
 function eye2Pos() {
     var windowWidth = $(window).width();
     var catRight = Math.floor(windowWidth / 4 + 200);
-    return catRight - 155;
+    return catRight - 145;
 }
 
-$(document).on("mousemove", function(event) {
-    $("#eye1").css("top", calcY1(event.pageX, event.pageY, eye1Pos()) + "px");
-    $("#eye1").css("left", calcX1(event.pageX, event.pageY, eye1Pos()) + "px");
-});
+function setEyes() {
+    $("#laser1").css("display", "none");
+    $("#laser2").css("display", "none");
+    $("#eye1").attr("src", "assets/images/eye.png");
+    $("#eye2").attr("src", "assets/images/eye.png");
+    $(document).on("mousemove", function(event) {
+        $("#eye1").css("top", calcY1(event.pageX, event.pageY, eye1Pos()) + "px");
+        $("#eye1").css("left", calcX1(event.pageX, event.pageY, eye1Pos()) + "px");
+    });
 
-$(window).resize(function(event) {
-    $("#eye1").css("top", calcY1(event.pageX, event.pageY, eye1Pos()) + "px");
-    $("#eye1").css("left", calcX1(event.pageX, event.pageY, eye1Pos()) + "px");
-});
+    $(window).resize(function(event) {
+        $("#eye1").css("top", calcY1(event.pageX, event.pageY, eye1Pos()) + "px");
+        $("#eye1").css("left", calcX1(event.pageX, event.pageY, eye1Pos()) + "px");
+    });
 
-$(document).on("mousemove", function(event) {
-    $("#eye2").css("top", calcY2(event.pageX, event.pageY, eye2Pos()) + "px");
-    $("#eye2").css("left", calcX2(event.pageX, event.pageY, eye2Pos()) + "px");
-});
+    $(document).on("mousemove", function(event) {
+        $("#eye2").css("top", calcY2(event.pageX, event.pageY, eye2Pos()) + "px");
+        $("#eye2").css("left", calcX2(event.pageX, event.pageY, eye2Pos()) + "px");
+    });
 
-$(window).resize(function(event) {
-    $("#eye2").css("top", calcY2(event.pageX, event.pageY, eye2Pos()) + "px");
-    $("#eye2").css("left", calcX2(event.pageX, event.pageY, eye2Pos()) + "px");
-});
+    $(window).resize(function(event) {
+        $("#eye2").css("top", calcY2(event.pageX, event.pageY, eye2Pos()) + "px");
+        $("#eye2").css("left", calcX2(event.pageX, event.pageY, eye2Pos()) + "px");
+    });
+}
+
+setEyes();
